@@ -11,7 +11,7 @@ class WebPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..loadRequest(Uri.parse("https://google.com/${website}"));
+      ..loadRequest(Uri.parse(website));
     return Scaffold(
         appBar: AppBar(
           title: Text("Home Page"),
